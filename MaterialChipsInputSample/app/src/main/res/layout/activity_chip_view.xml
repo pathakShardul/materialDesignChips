@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shardulpathak.materialchipsinputsample.ChipViewActivity">
+
+
+    <com.pchmn.materialchips.ChipView
+        android:id="@+id/first_chip_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:deletable="false"
+        app:hasAvatarIcon="false"
+        app:label="First Chip View" />
+
+
+    <com.pchmn.materialchips.ChipView
+        android:id="@+id/second_chip_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_chip_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:deletable="true"
+        app:hasAvatarIcon="false"
+        app:label="Second Chip View" />
+
+    <com.pchmn.materialchips.ChipView
+        android:id="@+id/third_chip_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_chip_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:deletable="true"
+        app:deleteIconColor="@color/chips_opened_bg"
+        app:hasAvatarIcon="false"
+        app:label="Third Chip View" />
+
+    <com.pchmn.materialchips.ChipView
+        android:id="@+id/fourth_chip_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/third_chip_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:avatarIcon="@mipmap/chip_view_avatar_two"
+        app:deletable="true"
+        app:deleteIcon="@mipmap/ic_delete_black_24dp"
+        app:hasAvatarIcon="true"
+        app:label="Fourth Chip View" />
+
+    <com.pchmn.materialchips.ChipView
+        android:id="@+id/fifth_chip_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fourth_chip_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:avatarIcon="@mipmap/chip_view_avatar_icon"
+        app:backgroundColor="@color/white_transparency"
+        app:deletable="true"
+        app:deleteIconColor="@color/colorPrimary"
+        app:hasAvatarIcon="true"
+        app:label="Fifth Chip View"
+        app:labelColor="@color/colorAccent" />
+</RelativeLayout>

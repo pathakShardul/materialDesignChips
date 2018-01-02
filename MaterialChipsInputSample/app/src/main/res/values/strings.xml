@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Material Chips Input Sample</string>
+    <string name="material_design_chips_main_tv">Material Design Chips</string>
+    <string name="chip_view_example_btn">Chip View Example</string>
+</resources>
